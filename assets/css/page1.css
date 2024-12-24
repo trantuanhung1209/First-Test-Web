@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxed {
+    width: 280px;
+    height: 516px;
+    padding: 4px;
+    background-image: linear-gradient(to right bottom, #EE4C56, #F57F20);
+    /* cai nay ko link nen khong can pointer */
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+.boxed-child {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: inherit;
+    position: relative;
+}
+
+.boxed:hover {
+    border-radius: 10px;
+    background: linear-gradient(171.54deg, #FF730F 21.38%, #C2000C 95.84%);
+    animation: hover-box 0.3s forwards linear;
+}
+
+.boxed-child:hover .circle {
+    animation: circle 1s linear backwards infinite reverse;
+}
+
+.boxed-child:hover > .inner-title {
+    color: #fff;
+}
+
+.boxed-child:hover >  .inner-desc {
+    color: #fff;
+}
+
+.boxed-child:hover {
+    
+    border-radius: 20px;
+    background: linear-gradient(171.54deg, #FF730F 21.38%, #C2000C 95.84%);
+}
+
+.inner-title {
+    color: #FF7F00;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.inner-img {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 50px;
+    right: 58px;
+}
+
+.inner-desc {
+    color: #666666;
+    font-size: 18px;
+
+}
+
+.inner-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #FF7F00;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    animation: button 0.5s infinite alternate;
+}
+
+.button a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #f6622d;
+}
+
+@keyframes hover-box {
+    0% {
+        transform: translateY(0px);
+    }
+
+    /* 50% {
+        transform: translateY(-10px);
+    } */
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes button {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+
