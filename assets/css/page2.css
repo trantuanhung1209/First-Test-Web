@@ -56,6 +56,11 @@ body {
     animation: wind 70s infinite linear reverse;
 }
 
+.button-continue {
+    left: 50%;
+    transform: translate(-80%, -100%);
+}
+
 /*// ELEMENTS TO ANIMATE //*/
 
 .mario {
