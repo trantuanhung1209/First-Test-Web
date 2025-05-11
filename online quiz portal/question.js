@@ -145,7 +145,7 @@ let questions = [
   {
     numb: 14,
     question: "Câu 14: Trong HTML5, thuộc tính nào giúp xác định cách nhập dữ liệu cho input?",
-    answer: 'A. placeholder',
+    answer: 'C. type',
     options: [
       'A. placeholder',
       'B. pattern',
