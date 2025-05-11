@@ -142,6 +142,30 @@ body {
     background: #ffeeee;
     border: 1px solid #f99;
     border-radius: 20px 20px 0 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.box .icon,
+.box h4,
+.box p {
+    transition: all 0.4s ease-in-out;
+}
+
+.box:hover {
+    background: #fff;
+    border: 1px solid #f99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover .icon {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.box:hover h4,
+.box:hover p {
+    transform: translateY(-20px);
 }
 
 .box .icon {
